@@ -52,7 +52,112 @@ body {
 .header img {
     width: 140px;
 }
+/*popup*/
 
+.notification-icon {
+    position: absolute;
+    top: 18px;
+    font-size: 22px;
+    color: #FFD966;
+    cursor: pointer;
+}
+.notification-icon i {
+    display: inline-block;
+}
+.badge-dot {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+}
+
+#notif-1 { right: 20px; }
+#notif-2 { right: 60px; }
+#notif-3 { right: 100px; }
+#notif-4 { right: 140px; }
+#notif-5 { right: 180px; }
+
+.notification-popup {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 250px;
+    background: #11163a;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.notification-popup h4 {
+    margin-top: 0;
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.notification-popup ul { padding-left: 18px; margin: 10px 0; }
+.notification-popup li { margin-bottom: 6px; font-size: 14px; }
+
+.signup-btn-popup {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background: linear-gradient(45deg, #ffcc00, #00e7ff);
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #11163a;
+}
+.signup-btn-popup:hover {
+    background: linear-gradient(45deg, #00e7ff, #ffa726);
+}
+
+.close-popup-btn {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 6px;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close-popup-btn:hover { background: #777; }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.brand-card {
+    width: 300px;
+    background: #11163a;
+    border-radius: 16px;
+    padding: 15px;
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: 0.3s;
+    margin: 10px;
+}
+.brand-card:hover { transform: translateY(-6px); }
+
+@media (max-width: 768px) {
+    .container { flex-direction: column; align-items: center; }
+    .brand-card { width: 90%; }
+}
+
+    
 /* Cards Container */
 .container {
     display: flex;
@@ -158,6 +263,98 @@ body {
 <div class="header">
     <img src="logo.png" alt="Oxy Club Logo">
 </div>
+
+    <!-- Notification Icons -->
+    <div id="notif-1" class="notification-icon" onclick="toggleNotification('popup-1')">
+        <i class="fas fa-bell"></i>
+        <span class="badge-dot"></span>
+    </div>
+    <div id="notif-2" class="notification-icon" onclick="toggleNotification('popup-2')">
+        <i class="fas fa-bell"></i>
+        <span class="badge-dot"></span>
+    </div>
+    <div id="notif-3" class="notification-icon" onclick="toggleNotification('popup-3')">
+        <i class="fas fa-bell"></i>
+        <span class="badge-dot"></span>
+    </div>
+    <div id="notif-4" class="notification-icon" onclick="toggleNotification('popup-4')">
+        <i class="fas fa-bell"></i>
+        <span class="badge-dot"></span>
+    </div>
+    <div id="notif-5" class="notification-icon" onclick="toggleNotification('popup-5')">
+        <i class="fas fa-bell"></i>
+        <span class="badge-dot"></span>
+    </div>
+</div>
+
+<!-- POPUPS -->
+<div id="popup-1" class="notification-popup">
+    <h4>1XBET Notification</h4>
+    <ul>
+        <li>নতুন বোনাস এসেছে!</li>
+    </ul>
+    <a href="https://refpa3267686.top/L?tag=d_905607m_1622c_2023&site=905607&ad=1622" target="_blank">
+        <button class="signup-btn-popup">Sign Up →</button>
+    </a>
+    <button onclick="closeNotification('popup-1')" class="close-popup-btn">Close</button>
+</div>
+
+<div id="popup-2" class="notification-popup">
+    <h4>LINEBET Notification</h4>
+    <ul>
+        <li>আজকের স্পেশাল অফার!</li>
+    </ul>
+    <a href="https://lb-aff.com/L?tag=d_1050501m_22611c_&site=1050501&ad=22611&r=en" target="_blank">
+        <button class="signup-btn-popup">Sign Up →</button>
+    </a>
+    <button onclick="closeNotification('popup-2')" class="close-popup-btn">Close</button>
+</div>
+
+<div id="popup-3" class="notification-popup">
+    <h4>MELBET Notification</h4>
+    <ul>
+        <li>10% কাশব্যাক উপলব্ধ!</li>
+    </ul>
+    <a href="https://refpa3665.com/L?tag=d_1298429m_18757c_&site=1298429&ad=18757&r=registration" target="_blank">
+        <button class="signup-btn-popup">Sign Up →</button>
+    </a>
+    <button onclick="closeNotification('popup-3')" class="close-popup-btn">Close</button>
+</div>
+
+<div id="popup-4" class="notification-popup">
+    <h4>PLANBET Notification</h4>
+    <ul>
+        <li>নতুন প্রোমো কোড: Oxy11!</li>
+    </ul>
+    <a href="https://plnbt.com/L?tag=d_4033205m_99037c_&site=4033205&ad=99037" target="_blank">
+        <button class="signup-btn-popup">Sign Up →</button>
+    </a>
+    <button onclick="closeNotification('popup-4')" class="close-popup-btn">Close</button>
+</div>
+
+<div id="popup-5" class="notification-popup">
+    <h4>BETWINNER Notification</h4>
+    <ul>
+        <li>আজকের বিশেষ অফার!</li>
+    </ul>
+    <a href="https://betwinner-96105.pro/en/registration?btag=d_45804m_418357c_bw_Qiq4ckBsYorJcC1CpGtzAC&type=fast&bonus=SPORT&currency=BDT" target="_blank">
+        <button class="signup-btn-popup">Sign Up →</button>
+    </a>
+    <button onclick="closeNotification('popup-5')" class="close-popup-btn">Close</button>
+</div>
+
+<!-- CARDS (Example) -->
+<div class="container">
+    <div class="brand-card">1XBET</div>
+    <div class="brand-card">LINEBET</div>
+    <div class="brand-card">MELBET</div>
+    <div class="brand-card">PLANBET</div>
+    <div class="brand-card">BETWINNER</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
 <!-- CARDS -->
 <div class="container">
