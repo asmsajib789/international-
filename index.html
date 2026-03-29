@@ -52,6 +52,32 @@ body {
 .header img {
     width: 140px;
 }
+
+    .premium-promo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px auto;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff3b3b, #ff8c00, #ffd700);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+.premium-promo-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff5b5b, #ffaa33, #ffe033);
+}
+
+.copy-icon {
+    font-size: 18px;
+}
 /* Cards Container */
 .container {
     display: flex;
@@ -325,6 +351,10 @@ body {
 <div class="header">
     <img src="logo.png" alt="Oxy Club Logo">
 </div>
+    <!-- Premium Promo Button -->
+<button class="premium-promo-btn" onclick="copyPromoCode('Oxy11')">
+  🎁 Premium Promo: Oxy11 <span class="copy-icon">📋</span>
+</button>
 
 <!-- CARDS -->
 <div class="container">
@@ -593,6 +623,14 @@ window.onclick = function(event) {
 window.onload = function() {
     setTimeout(openPopup, 3000);
 }
+        //promo code
+        function copyPromoCode(code) {
+    navigator.clipboard.writeText(code).then(() => {
+        alert("Promo code copied: " + code);
+    }).catch(() => {
+        alert("Failed to copy promo code");
+    });
+        }
     </script>
 </body>
 </html>
