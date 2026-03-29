@@ -133,7 +133,101 @@ body {
 .stat-value {
     font-weight: bold;
 }
+/* Popup Background */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
 
+/* Popup Box (Compact) */
+.popup-content {
+    background: #0b1c3d;
+    margin: 15% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 320px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+/* Animate popup in */
+.animate-popup {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Site Buttons */
+.site-btn, .whatsapp-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+    padding: 10px 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+/* Site button gradient */
+.site-btn {
+    background: linear-gradient(90deg, #ff3b3b, #ff8c00);
+}
+
+.site-btn:hover {
+    transform: scale(1.03);
+    background: linear-gradient(90deg, #ff5b5b, #ffaa33);
+}
+
+/* OR separator */
+.or-separator {
+    margin: 12px 0;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background: #25d366;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.03);
+    background: #20b858;
+}
+
+/* Site Logo */
+.site-logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
 /* Button */
 .signup-btn {
     width: 100%;
@@ -376,6 +470,32 @@ body {
 </div>
 
 </div>
+    <!-- Popup -->
+<div id="registerPopup" class="popup">
+  <div class="popup-content animate-popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>🎉 Join Your Favorite Site</h2>
+
+    <!-- Site Buttons -->
+    <a href="https://your-1xbet-link.com" class="site-btn">
+      <img src="1xbet-logo.png" alt="1xBet" class="site-logo"> 1xBet Register
+    </a>
+    <a href="https://your-linebet-link.com" class="site-btn">
+      <img src="linebet-logo.png" alt="Linebet" class="site-logo"> Linebet Register
+    </a>
+    <a href="https://your-melbet-link.com" class="site-btn">
+      <img src="melbet-logo.png" alt="Melbet" class="site-logo"> Melbet Register
+    </a>
+
+    <!-- OR separator -->
+    <div class="or-separator">OR</div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/8801826444505" target="_blank" class="whatsapp-btn">
+      <img src="whatsapp-logo.png" alt="WhatsApp" class="site-logo"> Contact via WhatsApp
+    </a>
+  </div>
+</div>
 
   <!-- SHORT SHARE FOOTER -->
   <footer style="background:#0a1128; color:#f0f4fe; padding:24px 20px; text-align:center; font-family:Poppins, Arial, sans-serif;">
@@ -446,6 +566,32 @@ body {
 
 function closePopup() {
     document.getElementById("registerPopup").style.display = "none";
+}
+        // Open Popup
+function openPopup() {
+    var popup = document.getElementById("registerPopup");
+    popup.style.display = "block";
+    popup.querySelector('.popup-content').classList.add('animate-popup');
+}
+
+// Close Popup
+function closePopup() {
+    var popup = document.getElementById("registerPopup");
+    popup.style.display = "none";
+    popup.querySelector('.popup-content').classList.remove('animate-popup');
+}
+
+// Close on click outside
+window.onclick = function(event) {
+    var popup = document.getElementById("registerPopup");
+    if (event.target == popup) {
+        closePopup();
+    }
+}
+
+// Auto trigger popup after page load (3 seconds)
+window.onload = function() {
+    setTimeout(openPopup, 3000);
 }
     </script>
 </body>
