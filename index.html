@@ -4,37 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>International Betting Site</title>
-    <!-- Font Awesome -->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-<!-- Sitemap -->
-<link rel="sitemap" type="application/xml" title="Sitemap" href="https://1xbetbdbangladesh.store/sitemap.xml">
-
-<!-- Google Site Verification -->
-<meta name="google-site-verification" content="ftrXN0IPxaCyDs5jK6f8gZY6opkN72qzAB0bhr_XDW4" />
-
-<!-- SEO Meta Tags -->
-<meta name="description" content="1xbet, Linebet, Melbet একাউন্ট খুলুন। দ্রুত ডিপোজিট, উইথড্র এবং বোনাস সুবিধা।">
-<meta name="keywords" content="1xBet, 1xbet Register, 1xbet login, online bet, casino, slots, Linebet, linebet login, linebet register, linebet casino, bettingsitebd, betwin, bet winner, planbet login, melbet casino, Melbet, betting, casino, bonus, Bangladesh">
-<meta name="author" content="Null Man">
-<meta name="robots" content="index, follow">
-
-<!-- Open Graph / Facebook / Pinterest -->
-<meta property="og:title" content="Bangladesh | Official Betting Portal">
-<meta property="og:description" content="একাউন্ট খুলুন। দ্রুত ডিপোজিট, উইথড্র এবং বোনাস সুবিধা।">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://1xbetbdbangladesh.store/">
-<meta property="og:image" content="https://1xbetbdbangladesh.store/assets/og-image.png">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Bangladesh | Official Betting Portal">
-<meta name="twitter:description" content="একাউন্ট খুলুন। দ্রুত ডিপোজিট, উইথড্র এবং বোনাস সুবিধা।">
-<meta name="twitter:image" content="https://1xbetbdbangladesh.store/assets/twitter-image.png">
-<meta name="twitter:site" content="@sajibvai_bot">
-<meta name="twitter:creator" content="@sajibvai_bot">
-  
-    
 <style>
 body {
     background: #0b0f2a;
@@ -49,39 +21,23 @@ body {
     padding: 15px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    position: relative;
 }
 
 .header img {
     width: 140px;
 }
 
-    .premium-promo-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    margin: 4px auto 5px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background: linear-gradient(135deg, #ff3b3b, #ff8c00, #ffd700);
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-    transition: all 0.3s ease;
-    display: block;
+/* Gift Icon */
+.gift-icon{
+    position:absolute;
+    right:15px;
+    top:15px;
+    font-size:22px;
+    cursor:pointer;
 }
 
-.premium-promo-btn:hover {
-    transform: scale(1.05);
-    background: linear-gradient(135deg, #ff5b5b, #ffaa33, #ffe033);
-}
-
-.copy-icon {
-    font-size: 18px;
-}
-/* Cards Container */
+/* CARDS */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +45,6 @@ body {
     padding: 10px;
 }
 
-/* Card */
 .brand-card {
     width: 300px;
     background: #11163a;
@@ -105,13 +60,12 @@ body {
     transform: translateY(-6px);
 }
 
-/* Header */
 .card-header {
     display: flex;
     justify-content: space-between;
+    align-items:center;
 }
 
-/* Logo */
 .logo {
     width: 130px;
     height: 40px;
@@ -119,31 +73,12 @@ body {
     object-fit: cover;
 }
 
-/* Badge */
-.badge {
-    font-size: 10px;
-    padding: 3px 6px;
-    border-radius: 6px;
-    background: #c80011;
-}
-
-/* Rating */
-.rating-number {
-    font-size: 18px;
-    font-weight: bold;
-}
-.rating-star {
-    color: gold;
-}
-
-/* Brand Name */
 .brand-name {
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0;
 }
 
-/* Stats */
 .stats-grid {
     display: flex;
     justify-content: space-between;
@@ -162,107 +97,12 @@ body {
 .stat-value {
     font-weight: bold;
 }
-/* Popup Background */
-.popup {
-    display: none;
-    position: fixed;
-    z-index: 10000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-}
 
-/* Popup Box (Compact) */
-.popup-content {
-    background: #0b1c3d;
-    margin: 15% auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 320px;
-    border-radius: 15px;
-    text-align: center;
-    color: #fff;
-    position: relative;
-    transform: scale(0);
-    opacity: 0;
-    transition: all 0.4s ease;
-}
-
-/* Animate popup in */
-.animate-popup {
-    transform: scale(1);
-    opacity: 1;
-}
-
-/* Close Button */
-.close {
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    font-size: 22px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #fff;
-}
-
-/* Site Buttons */
-.site-btn, .whatsapp-btn {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 10px 0;
-    padding: 10px 8px;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: 0.3s;
-}
-
-/* Site button gradient */
-.site-btn {
-    background: linear-gradient(90deg, #ff3b3b, #ff8c00);
-}
-
-.site-btn:hover {
-    transform: scale(1.03);
-    background: linear-gradient(90deg, #ff5b5b, #ffaa33);
-}
-
-/* OR separator */
-.or-separator {
-    margin: 12px 0;
-    font-weight: bold;
-    color: #fff;
-    font-size: 14px;
-}
-
-/* WhatsApp Button */
-.whatsapp-btn {
-    background: #25d366;
-}
-
-.whatsapp-btn:hover {
-    transform: scale(1.03);
-    background: #20b858;
-}
-
-/* Site Logo */
-.site-logo {
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
-    flex-shrink: 0;
-    border-radius: 5px;
-}
-/* Button */
 .signup-btn {
     width: 100%;
     padding: 12px;
     border: none;
-    background: linear-gradient(45deg, #ffcc00, ##00e7ff);
+    background: linear-gradient(45deg, #ffcc00, #00e7ff);
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
@@ -272,7 +112,8 @@ body {
 .signup-btn:hover {
     background: linear-gradient(45deg, #00e7ff, #ffa726);
 }
-    /* Sticky Button */
+
+/* Sticky CTA Button */
 .sticky-cta {
     position: fixed;
     bottom: 160px;
@@ -288,66 +129,104 @@ body {
     animation: pulse 1.5s infinite;
 }
 
-/* Popup Background st*/
-.popup {
-    display: none;
-    position: fixed;
-    z-index: 10000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-    margin: 10% auto;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Popup Box */
-.popup-content {
-    background: #0b1c3d;
-    margin: 15% auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 350px;
-    border-radius: 15px;
-    text-align: center;
-    color: #fff;
-}
-
-/* Buttons */
-.site-btn {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 10px 0;
-    padding: 12px;
-    background: #1e90ff;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-/* Logo inside button */
-.site-logo {
-    width: 100px;
-    height: 35px;
-    margin-right: 10px;
-}
-
-/* Close Button */
-.close {
-    float: right;
-    font-size: 22px;
-    cursor: pointer;
-}
-
-/* Pulse Animation for sticky button */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
+
+/* SPIN MODAL */
+#spinModal{
+display:none;
+position:fixed;
+z-index:99999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+}
+
+.spin-box{
+background:#111;
+margin:15% auto;
+padding:20px;
+width:300px;
+border-radius:10px;
+text-align:center;
+color:white;
+position:relative;
+}
+
+#wheel{
+width:250px;
+height:250px;
+border-radius:50%;
+border:6px solid white;
+margin:20px auto;
+position:relative;
+overflow:hidden;
+}
+
+/* REGISTER POPUP */
+#registerPopup{
+display:none;
+position:fixed;
+z-index:99999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+}
+
+.popup-content{
+background:#0b1c3d;
+margin:15% auto;
+padding:20px;
+width:90%;
+max-width:350px;
+border-radius:15px;
+text-align:center;
+color:white;
+position:relative;
+transform: scale(0);
+opacity:0;
+transition: all 0.4s ease;
+}
+
+.popup-content.animate-popup{
+transform:scale(1);
+opacity:1;
+}
+
+.popup-content .close{
+position:absolute;
+top:10px;
+right:12px;
+font-size:22px;
+cursor:pointer;
+}
+
+/* Site Buttons */
+.site-btn, .whatsapp-btn{
+display:flex;
+align-items:center;
+justify-content:flex-start;
+margin:10px 0;
+padding:12px;
+border-radius:8px;
+font-weight:bold;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+.site-btn{background:#1e90ff;}
+.site-btn:hover{background:#3aa0ff;}
+.whatsapp-btn{background:#25d366;}
+.whatsapp-btn:hover{background:#20b858;}
+.site-logo{width:100px;height:35px;margin-right:10px;}
+.or-separator{margin:12px 0;font-weight:bold;color:white;font-size:14px;}
 </style>
 </head>
 <body>
@@ -355,26 +234,17 @@ body {
 <!-- HEADER -->
 <div class="header">
     <img src="logo.png" alt="Oxy Club Logo">
+    <div class="gift-icon" onclick="openSpin()">🎁</div>
 </div>
-    <!-- Premium Promo Button -->
-<button class="premium-promo-btn" onclick="copyPromoCode('Oxy11')">
-  🎁 Promo Code: Oxy11 <span class="copy-icon">👑</span>
-</button>
 
-<!-- CARDS -->
+<!-- CARDS SYSTEM -->
 <div class="container">
 
 <!-- 1XBET -->
 <div class="brand-card">
     <div class="card-header">
-        <div>
-            <img src="1xbet1.jpeg" class="logo">
-            <div><span class="badge">Top Rated★★★</span></div>
-        </div>
-        <div>
-            <div class="rating-number">9.5</div>
-            <div class="rating-star">★★★★★</div>
-        </div>
+        <img src="1xbet1.jpeg" class="logo">
+        <div class="rating-number">9.5 ⭐</div>
     </div>
     <div class="brand-name">1XBET</div>
     <div class="stats-grid">
@@ -388,21 +258,15 @@ body {
         </div>
     </div>
     <a href="https://refpa3267686.top/L?tag=d_905607m_1622c_2023&site=905607&ad=1622" target="_blank">
-        <button class="signup-btn"> SignUp→</button>
+        <button class="signup-btn">🚀 Join 1XBET</button>
     </a>
 </div>
 
 <!-- LINEBET -->
 <div class="brand-card">
     <div class="card-header">
-        <div>
-            <img src="lb.png" class="logo">
-            <div><span class="badge">Popular</span></div>
-        </div>
-        <div>
-            <div class="rating-number">9.3</div>
-            <div class="rating-star">★★★★★</div>
-        </div>
+        <img src="lb.png" class="logo">
+        <div class="rating-number">9.3 ⭐</div>
     </div>
     <div class="brand-name">LINEBET</div>
     <div class="stats-grid">
@@ -416,21 +280,15 @@ body {
         </div>
     </div>
     <a href="https://lb-aff.com/L?tag=d_1050501m_22611c_&site=1050501&ad=22611&r=en" target="_blank">
-        <button class="signup-btn">SignUp →</button>
+        <button class="signup-btn">🚀 Join LINEBET</button>
     </a>
 </div>
 
 <!-- MELBET -->
 <div class="brand-card">
     <div class="card-header">
-        <div>
-            <img src="melbet.png" class="logo">
-            <div><span class="badge">RECOMMENDED</span></div>
-        </div>
-        <div>
-            <div class="rating-number">9.0</div>
-            <div class="rating-star">★★★★★</div>
-        </div>
+        <img src="melbet.png" class="logo">
+        <div class="rating-number">9.0 ⭐</div>
     </div>
     <div class="brand-name">MELBET</div>
     <div class="stats-grid">
@@ -444,49 +302,15 @@ body {
         </div>
     </div>
     <a href="https://refpa3665.com/L?tag=d_1298429m_18757c_&site=1298429&ad=18757&r=registration" target="_blank">
-        <button class="signup-btn">SignUp →</button>
-    </a>
-</div>
-
-<!-- PLANBET -->
-<div class="brand-card">
-    <div class="card-header">
-        <div>
-            <img src="planbet.webp" class="logo">
-            <div><span class="badge">NEW</span></div>
-        </div>
-        <div>
-            <div class="rating-number">8.8</div>
-            <div class="rating-star">★★★★☆</div>
-        </div>
-    </div>
-    <div class="brand-name">Promo Code: Oxy11</div>
-    <div class="stats-grid">
-        <div class="stat-item">
-            <div class="stat-label">PAYOUT</div>
-            <div class="stat-value">95%</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-label">MARKETS</div>
-            <div class="stat-value">12/14</div>
-        </div>
-    </div>
-    <a href="https://plnbt.com/L?tag=d_4033205m_99037c_&site=4033205&ad=99037" target="_blank">
-        <button class="signup-btn">SignUp →</button>
+        <button class="signup-btn">🚀 Join MELBET</button>
     </a>
 </div>
 
 <!-- BETWINNER -->
 <div class="brand-card">
     <div class="card-header">
-        <div>
-            <img src="betwin.webp" class="logo">
-            <div><span class="badge">Master Pitch</span></div>
-        </div>
-        <div>
-            <div class="rating-number">9.2</div>
-            <div class="rating-star">★★★★★</div>
-        </div>
+        <img src="betwin.webp" class="logo">
+        <div class="rating-number">9.2 ⭐</div>
     </div>
     <div class="brand-name">BETWINNER</div>
     <div class="stats-grid">
@@ -499,143 +323,155 @@ body {
             <div class="stat-value">13/14</div>
         </div>
     </div>
-    <a href=" https://betwinner-96105.pro/en/registration?btag=d_45804m_418357c_bw_Qiq4ckBsYorJcC1CpGtzAC&type=fast&bonus=SPORT&currency=BDT">
-        <button class="signup-btn">SignUp →</button>
+    <a href="https://betwinner-96105.pro/en/registration?btag=d_45804m_418357c_bw_Qiq4ckBsYorJcC1CpGtzAC&type=fast&bonus=SPORT&currency=BDT" target="_blank">
+        <button class="signup-btn">🚀 Join BETWINNER</button>
+    </a>
+</div>
+
+<!-- PLANBET -->
+<div class="brand-card">
+    <div class="card-header">
+        <img src="planbet.webp" class="logo">
+        <div class="rating-number">8.8 ⭐</div>
+    </div>
+    <div class="brand-name">PLANBET</div>
+    <div class="stats-grid">
+        <div class="stat-item">
+            <div class="stat-label">PAYOUT</div>
+            <div class="stat-value">95%</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-label">MARKETS</div>
+            <div class="stat-value">12/14</div>
+        </div>
+    </div>
+    <a href="https://plnbt.com/L?tag=d_4033205m_99037c_&site=4033205&ad=99037" target="_blank">
+        <button class="signup-btn">🚀 Join PLANBET</button>
     </a>
 </div>
 
 </div>
-    <!-- Popup -->
-<div id="registerPopup" class="popup">
-  <div class="popup-content animate-popup">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <h2>🎉 Use promo code: Oxy11</h2>
 
-    <!-- Site Buttons -->
+<!-- Sticky CTA Button -->
+<button class="sticky-cta" onclick="openRegisterPopup()">🎁 Register Now</button>
+
+<!-- REGISTER POPUP -->
+<div id="registerPopup">
+<div class="popup-content">
+    <span class="close" onclick="closeRegisterPopup()">&times;</span>
+    <h2>🎉 Use Promo Code: Oxy11</h2>
+
     <a href="https://refpa3267686.top/L?tag=d_905607m_1622c_2023&site=905607&ad=1622" class="site-btn">
-      <img src="1xbet2.png" alt="1xBet" class="site-logo"> Click Me to registration
+      <img src="1xbet1.png" class="site-logo"> 1XBET
     </a>
     <a href="https://lb-aff.com/L?tag=d_1050501m_22611c_&site=1050501&ad=22611&r=en" class="site-btn">
-      <img src="linebet.jpeg" alt="Linebet" class="site-logo"> Click Me to registration
+      <img src="linebet1.jpeg" class="site-logo"> LINEBET
     </a>
     <a href="https://refpa3665.com/L?tag=d_1298429m_18757c_&site=1298429&ad=18757&r=registration" class="site-btn">
-      <img src="mel1.png" alt="Melbet" class="site-logo"> Click Me to registration
+      <img src="melbet1.png" class="site-logo"> MELBET
     </a>
 
-    <!-- OR separator -->
     <div class="or-separator">OR</div>
 
-    <!-- WhatsApp Button -->
     <a href="https://wa.me/8801826444505" target="_blank" class="whatsapp-btn">
-      <img src="whatsapp-logo.jpeg" alt="WhatsApp" class="site-logo"> Contact via WhatsApp
+      <img src="whatsapp-logo.jpeg" class="site-logo"> Contact via WhatsApp
     </a>
-  </div>
+
+</div>
 </div>
 
-  <!-- SHORT SHARE FOOTER -->
-  <footer style="background:#0a1128; color:#f0f4fe; padding:24px 20px; text-align:center; font-family:Poppins, Arial, sans-serif;">
-    
-    <div style="margin-bottom:12px; font-weight:600; font-size:1.2rem; color:#FFD966;">
-      Share with Friend
-    </div>
+<!-- SPIN MODAL -->
+<div id="spinModal">
+<div class="spin-box">
+<span onclick="closeSpin()" style="position:absolute;right:10px;top:10px;cursor:pointer;">&times;</span>
 
-    <div style="margin-bottom:12px;">
+<h3>🎯 Spin & Win</h3>
+<div id="wheel"></div>
 
-      <!-- Messenger -->
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://1xbetbdbangladesh.store/" target="_blank" 
-         style="margin:0 6px; font-size:1.6rem; text-decoration:none; color:#0084FF;">
-        <i class="fab fa-facebook-messenger"></i>
-      </a>
+<div style="
+width:0;
+height:0;
+border-left:10px solid transparent;
+border-right:10px solid transparent;
+border-bottom:20px solid gold;
+margin:auto;
+"></div>
 
-      <!-- WhatsApp -->
-      <a href="https://wa.me/?text=Check%20out%20this%20site%20https://1xbetbdbangladesh.store/" target="_blank" 
-         style="margin:0 6px; font-size:1.6rem; text-decoration:none; color:#25D366;">
-        <i class="fab fa-whatsapp"></i>
-      </a>
+<button onclick="spin()" style="margin-top:10px;padding:10px 20px;">SPIN</button>
 
-      <!-- Telegram -->
-      <a href="https://t.me/share/url?url=https://1xbetbdbangladesh.store/&text=Check%20out%20this%20site!" target="_blank" 
-         style="margin:0 6px; font-size:1.6rem; text-decoration:none; color:#0088CC;">
-        <i class="fab fa-telegram-plane"></i>
-      </a>
-
-      <!-- IMO (Optional) -->
-      <a href="#" target="_blank" style="margin:0 6px; font-size:1.6rem; text-decoration:none; color:#FF5A5F;">
-        <i class="fas fa-comment-dots"></i>
-      </a>
-
-    </div>
-
-    <div style="font-size:0.85rem; color:#b9c3e6;">
-      &copy; 1xbetbangladesh. All Rights Reserved.
-    </div>
-  </footer>
-
-    <!-- Sticky Button -->
-<button class="sticky-cta" onclick="openPopup()">🚀 Register Now</button>
-
-<!-- Popup -->
-<div id="registerPopup" class="popup">
-  <div class="popup-content">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <h2>Promo Code: Oxy11</h2>
-
-    <!-- Site Buttons with Logo -->
-    <a href="https://refpa3267686.top/L?tag=d_905607m_1622c_2023&site=905607&ad=1622" class="site-btn">
-      <img src="1xbet1.png" alt="1xBet" class="site-logo"> Click Me to registration 
-    </a>
-    <a href="https://lb-aff.com/L?tag=d_1050501m_22611c_&site=1050501&ad=22611&r=en" class="site-btn">
-      <img src="linebet1.jpeg" alt="Linebet" class="site-logo">Click Me to registration
-    </a>
-    <a href="https://refpa3665.com/L?tag=d_1298429m_18757c_&site=1298429&ad=18757&r=registration" class="site-btn">
-      <img src="melbet1.png" alt="Melbet" class="site-logo"> Click Me to registration
-    </a>
-
-  </div>
 </div>
-    <script>
-  // এখানে উপরের JS code paste করো
-        function openPopup() {
-    document.getElementById("registerPopup").style.display = "block";
-}
+</div>
 
-function closePopup() {
-    document.getElementById("registerPopup").style.display = "none";
-}
-        // Open Popup
-function openPopup() {
+<script>
+// Register Popup
+function openRegisterPopup(){
     var popup = document.getElementById("registerPopup");
-    popup.style.display = "block";
+    popup.style.display = "flex";
     popup.querySelector('.popup-content').classList.add('animate-popup');
 }
-
-// Close Popup
-function closePopup() {
+function closeRegisterPopup(){
     var popup = document.getElementById("registerPopup");
     popup.style.display = "none";
     popup.querySelector('.popup-content').classList.remove('animate-popup');
 }
-
-// Close on click outside
-window.onclick = function(event) {
+window.onclick = function(event){
     var popup = document.getElementById("registerPopup");
-    if (event.target == popup) {
-        closePopup();
-    }
+    if(event.target == popup) closeRegisterPopup();
 }
 
-// Auto trigger popup after page load (3 seconds)
-window.onload = function() {
-    setTimeout(openPopup, 3000);
+// SPIN
+const spinSites = [
+ {name:"1XBET", link:"https://refpa3267686.top/L?tag=d_905607m_1622c_2023&site=905607&ad=1622"},
+ {name:"LINEBET", link:"https://lb-aff.com/L?tag=d_1050501m_22611c_&site=1050501&ad=22611&r=en"},
+ {name:"MELBET", link:"https://refpa3665.com/L?tag=d_1298429m_18757c_&site=1298429&ad=18757&r=registration"},
+ {name:"PLANBET", link:"https://plnbt.com/L?tag=d_4033205m_99037c_&site=4033205&ad=99037"},
+ {name:"BETWINNER", link:"https://betwinner-96105.pro/en/registration?btag=d_45804m_418357c_bw_Qiq4ckBsYorJcC1CpGtzAC&type=fast&bonus=SPORT&currency=BDT"}
+];
+
+const wheel = document.getElementById("wheel");
+const angle = 360 / spinSites.length;
+
+// create wheel
+spinSites.forEach((site, i)=>{
+ let slice = document.createElement("div");
+ slice.style.position="absolute";
+ slice.style.width="50%";
+ slice.style.height="50%";
+ slice.style.transformOrigin="100% 100%";
+ slice.style.display="flex";
+ slice.style.alignItems="center";
+ slice.style.justifyContent="center";
+ slice.style.transform = `rotate(${i*angle}deg) skewY(${90-angle}deg)`;
+ slice.style.background = i%2?"#ff4757":"#1e90ff";
+
+ let text = document.createElement("span");
+ text.innerText = site.name;
+ text.style.transform="rotate(45deg)";
+ text.style.fontSize="12px";
+
+ slice.appendChild(text);
+ wheel.appendChild(slice);
+});
+
+// open/close spin modal
+function openSpin(){ document.getElementById("spinModal").style.display="block"; }
+function closeSpin(){ document.getElementById("spinModal").style.display="none"; }
+
+// spin
+function spin(){
+ let index = Math.floor(Math.random()*spinSites.length);
+ let deg = 360*5 + angle*index;
+
+ wheel.style.transition="transform 4s ease-out";
+ wheel.style.transform=`rotate(${deg}deg)`;
+
+ setTimeout(()=>{
+  let selected = spinSites[index];
+  alert("🎉 "+selected.name);
+  window.location.href = selected.link;
+ },4000);
 }
-        //promo code
-        function copyPromoCode(code) {
-    navigator.clipboard.writeText(code).then(() => {
-        alert("Promo code copied: " + code);
-    }).catch(() => {
-        alert("Failed to copy promo code");
-    });
-        }
-    </script>
+</script>
+
 </body>
 </html>
