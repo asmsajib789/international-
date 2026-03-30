@@ -146,7 +146,46 @@ body {
 .signup-btn:hover {
     background: linear-gradient(45deg, #00e7ff, #ffa726);
 }
-
+.payment-methods {
+    text-align: center;
+    margin: 30px 0;
+    font-family: sans-serif;
+}
+.payment-methods h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.payment-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.payment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.payment-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+.payment-card span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.payment-card:hover {
+    transform: translateY(-5px);
+}
 /* Sticky CTA Button */
 .sticky-cta {
     position: fixed;
@@ -411,6 +450,33 @@ transition:0.3s;
     </a>
 </div>
 
+</div>
+
+    <!-- Payment Method Section -->
+<div class="payment-methods">
+    <h3>Payment Method</h3>
+    <div class="payment-cards">
+        <div class="payment-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Nagad_Logo.png" alt="Nagad Logo">
+            <span>Nagad</span>
+        </div>
+        <div class="payment-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/BKash_logo.png" alt="bKash Logo">
+            <span>bKash</span>
+        </div>
+        <div class="payment-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Rocket_Logo.png" alt="Rocket Logo">
+            <span>Rocket</span>
+        </div>
+        <div class="payment-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Upay_logo.png" alt="Upay Logo">
+            <span>Upay</span>
+        </div>
+        <div class="payment-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Binance_Logo.png" alt="Binance Logo">
+            <span>Binance</span>
+        </div>
+    </div>
 </div>
 
 <!-- Sticky CTA Button -->
