@@ -8,27 +8,38 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #003300; /* Dark green background */
-      color: #fff; /* white text */
+      background: #003300;
+      color: #fff;
     }
     a { text-decoration: none; }
 
     header {
-      background: #006600; /* green header */
-      padding: 20px;
-      text-align: center;
+      background: #006600;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    header img.logo {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    header h1 {
       font-size: 28px;
       font-weight: bold;
       color: #fff;
       letter-spacing: 1px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     }
 
     .blog-section {
       position: relative;
       max-width: 800px;
       margin: 50px auto;
-      background: #005500; /* darker green card */
+      background: #005500;
       padding: 40px 30px;
       border-radius: 15px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.5);
@@ -37,7 +48,6 @@
     }
     .blog-section:hover { transform: translateY(-5px); }
 
-    /* X BUTTON */
     .close-btn {
       position: absolute;
       top: 15px;
@@ -57,7 +67,7 @@
     }
     .close-btn:hover { background: #ff0000; transform: scale(1.1); }
 
-    .blog-section h2 { font-size: 28px; margin-bottom: 20px; color: #00ff99; } /* greenish title */
+    .blog-section h2 { font-size: 28px; margin-bottom: 20px; color: #00ff99; }
     .blog-section p { font-size: 16px; margin-bottom: 25px; line-height: 1.6; color: #fff; }
 
     .steps {
@@ -76,8 +86,8 @@
 
     .btn {
       display: inline-block;
-      background: #00ff99; /* green button */
-      color: #003300; /* dark text */
+      background: #00ff99;
+      color: #003300;
       padding: 12px 25px;
       border-radius: 8px;
       font-weight: bold;
@@ -96,6 +106,8 @@
     }
 
     @media(max-width: 600px) {
+      header { flex-direction: column; }
+      header img.logo { margin: 0 0 10px 0; }
       .blog-section { padding: 30px 20px; }
       .blog-section h2 { font-size: 24px; }
       .btn { padding: 10px 20px; }
@@ -104,14 +116,32 @@
 </head>
 <body>
 
-<header>LineBet BD Guide</header>
+<header>
+  <img src="lb.png" alt="LineBet Logo" class="logo">
+  <h1>LineBet BD Guide</h1>
+</header>
 
 <section class="blog-section" id="linebet">
-  <!-- X BUTTON -->
   <div class="close-btn" onclick="window.location.href='index.html'">×</div>
 
   <h2>LineBet Account & Deposit Guide</h2>
   <p>বাংলাদেশ থেকে LineBet একাউন্ট খুলতে এবং deposit করতে নিচের step গুলো follow করুন।</p>
+
+  <ol class="steps">
+    <li>Join Now বাটন ক্লিক করুন।</li>
+    <li>আপনার নাম্বার বা ইমেইল দিন।</li>
+    <li>Password দিন।</li>
+    <li>Promo Code ব্যবহার করুন: <b>Oxy11</b></li>
+    <li>Deposit করুন (Nagad / bKash / Rocket)</li>
+  </ol>
+
+  <a href="YOUR_LINEBET_AFFILIATE_LINK" class="btn">Join Now</a>
+</section>
+
+<footer>© 2026 BdWorld Oxy Club</footer>
+
+</body>
+</html>  <p>বাংলাদেশ থেকে LineBet একাউন্ট খুলতে এবং deposit করতে নিচের step গুলো follow করুন।</p>
 
   <ol class="steps">
     <li>Join Now বাটন ক্লিক করুন।</li>
