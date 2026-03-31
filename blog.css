@@ -1,0 +1,54 @@
+/* BLOG SECTION */
+.blog-section {
+  background: #0b1c3d;      /* Dark background */
+  padding: 40px 20px;       /* Top/Bottom padding */
+  color: #fff;
+  text-align: center;
+}
+
+.blog-section h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* Grid for multiple blog cards */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Each blog card */
+.blog-card {
+  background: #122a5c;       /* Card color */
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.blog-card:hover {
+  transform: translateY(-5px);
+  background: #1a3b7a;
+}
+
+.blog-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.blog-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Read More button inside blog card */
+.blog-card a {
+  color: #00c3ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-card a:hover {
+  text-decoration: underline;
+}
