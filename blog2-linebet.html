@@ -3,87 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>1xBet Guide Bangladesh</title>
+  <title>LineBet Guide Bangladesh</title>
   <style>
-    /* GENERAL */
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b1c3d;
-      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #003300; /* Dark green background */
+      color: #fff; /* white text */
     }
+    a { text-decoration: none; }
 
-    a {
-      text-decoration: none;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #00c3ff;
-      color: #000;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    .btn:hover {
-      background: #00a2d6;
-    }
-
-    /* HEADER */
     header {
-      background: #06142b;
-      padding: 15px;
+      background: #006600; /* green header */
+      padding: 20px;
       text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .blog-section {
+      position: relative;
+      max-width: 800px;
+      margin: 50px auto;
+      background: #005500; /* darker green card */
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .blog-section:hover { transform: translateY(-5px); }
+
+    /* X BUTTON */
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
       font-size: 24px;
       font-weight: bold;
-    }
-
-    /* HERO / CONTENT */
-    .blog-section {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #122a5c;
-      padding: 30px 20px;
-      border-radius: 12px;
+      color: #fff;
+      cursor: pointer;
+      background: #ff4c4c;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
       text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      transition: 0.3s;
     }
+    .close-btn:hover { background: #ff0000; transform: scale(1.1); }
 
-    .blog-section h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    .blog-section p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
+    .blog-section h2 { font-size: 28px; margin-bottom: 20px; color: #00ff99; } /* greenish title */
+    .blog-section p { font-size: 16px; margin-bottom: 25px; line-height: 1.6; color: #fff; }
 
     .steps {
       text-align: left;
-      margin: 20px auto;
+      margin: 0 auto 30px auto;
       padding-left: 20px;
+      list-style: none;
     }
     .steps li {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       font-size: 16px;
+      position: relative;
+      padding-left: 25px;
     }
+    .steps li::before { content: "✔"; position: absolute; left: 0; color: #00ff99; }
+
+    .btn {
+      display: inline-block;
+      background: #00ff99; /* green button */
+      color: #003300; /* dark text */
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 5px;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #00cc77; transform: translateY(-2px); }
 
     footer {
       text-align: center;
-      padding: 15px;
-      background: #06142b;
-      margin-top: 40px;
+      padding: 20px;
+      background: #006600;
+      margin-top: 50px;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    @media(max-width: 600px) {
+      .blog-section { padding: 30px 20px; }
+      .blog-section h2 { font-size: 24px; }
+      .btn { padding: 10px 20px; }
     }
   </style>
 </head>
 <body>
 
-<header>1xBet BD Guide</header>
+<header>LineBet BD Guide</header>
 
-<section class="blog-section">
-  <h2>1xBet Account & Deposit Guide</h2>
-  <p>বাংলাদেশ থেকে 1xBet একাউন্ট খুলতে এবং deposit করতে নিচের step গুলো follow করুন।</p>
+<section class="blog-section" id="linebet">
+  <!-- X BUTTON -->
+  <div class="close-btn" onclick="window.location.href='index.html'">×</div>
+
+  <h2>LineBet Account & Deposit Guide</h2>
+  <p>বাংলাদেশ থেকে LineBet একাউন্ট খুলতে এবং deposit করতে নিচের step গুলো follow করুন।</p>
 
   <ol class="steps">
     <li>Join Now বাটন ক্লিক করুন।</li>
@@ -93,8 +121,7 @@
     <li>Deposit করুন (Nagad / bKash / Rocket)</li>
   </ol>
 
-  <a href="index.html" class="btn">⬅ Back</a>
-  <a href="YOUR_1XBET_AFFILIATE_LINK" class="btn">Join Now</a>
+  <a href="YOUR_LINEBET_AFFILIATE_LINK" class="btn">Join Now</a>
 </section>
 
 <footer>© 2026 BdWorld Oxy Club</footer>
