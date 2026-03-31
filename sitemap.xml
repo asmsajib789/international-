@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home page -->
   <url>
     <loc>https://1xbetbdbangladesh.store/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
+
+  <!-- 1xBet blog page -->
   <url>
-    <loc>https://1xbetbdbangladesh.store/1xbet</loc>
+    <loc>https://1xbetbdbangladesh.store/blog1-1xbet.html</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
+  <!-- LineBet blog page -->
   <url>
-    <loc>https://1xbetbdbangladesh.store/linebet</loc>
+    <loc>https://1xbetbdbangladesh.store/blog1-linebet.html</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
+  <!-- MelBet blog page -->
   <url>
-    <loc>https://1xbetbdbangladesh.store/melbet</loc>
+    <loc>https://1xbetbdbangladesh.store/blog1-melbet.html</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
+  <!-- Contact / WhatsApp page if separate -->
+  <url>
+    <loc>https://1xbetbdbangladesh.store/contact.html</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>
