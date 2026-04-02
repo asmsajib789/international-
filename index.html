@@ -266,7 +266,89 @@ header {
   margin-bottom: 10px;
 }
 
+/* Games Section */
+.games-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
 
+.games-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.games-section p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Cards container */
+.games-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Individual card */
+.game-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
+
+.game-card img {
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+.game-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #0b2b3b;
+}
+
+.game-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Join button */
+.btn-join {
+  display: inline-block;
+  background: linear-gradient(135deg,#00c3ff,#007bff);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-join:hover {
+  background: linear-gradient(135deg,#007bff,#00c3ff);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .games-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .game-card img {
+    max-width: 80px;
+  }
+}
 
 /* FAQ কন্টেইনার - মডার্ন কার্ড স্টাইল */
 .faq-container {
