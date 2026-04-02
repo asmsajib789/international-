@@ -265,40 +265,221 @@ header {
   font-size: 14px;
   margin-bottom: 15px;
 }
-.seo-content {
-  padding: 20px;
-  background: #0b1a2a;
-  color: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(145deg, #f4f7fc 0%, #e9eef3 100%);
+  font-family: 'Inter', sans-serif;
+  padding: 2rem 1.5rem;
+  color: #1a2c3e;
+}
+
+/* FAQ কন্টেইনার - মডার্ন কার্ড স্টাইল */
+.faq-container {
+  max-width: 880px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(2px);
+  border-radius: 2rem;
+  box-shadow: 0 25px 45px -12px rgba(0,0,0,0.2), 0 2px 6px rgba(0,0,0,0.02);
+  padding: 2rem 1.5rem;
+  transition: all 0.2s ease;
+}
+
+/* হেডার স্টাইল */
+.faq-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.faq-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0b2b3b, #1a4a6f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -0.3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq-header h1 i {
+  background: none;
+  color: #1e6f5c;
+  font-size: 2rem;
+  background-clip: unset;
+  -webkit-background-clip: unset;
+}
+
+.faq-header p {
+  color: #4a627a;
+  margin-top: 10px;
+  font-weight: 500;
+  border-top: 1px solid #cbdde9;
+  display: inline-block;
+  padding-top: 12px;
+}
+
+/* অ্যাকর্ডিয়ন আইটেম */
+.faq-item {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  border: 1px solid rgba(158, 184, 200, 0.3);
+  overflow: hidden;
+}
+
+.faq-item:hover {
+  border-color: #9bc4d4;
+  box-shadow: 0 12px 20px -12px rgba(0, 65, 80, 0.15);
+}
+
+/* বাটন স্টাইল */
 .faq-btn {
   width: 100%;
-  background: #112b44;
-  color: #fff;
+  background: white;
   border: none;
-  padding: 12px;
-  text-align: left;
-  font-size: 16px;
+  padding: 1.2rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f2e3f;
   cursor: pointer;
-  margin-top: 10px;
-  border-radius: 6px;
+  transition: all 0.2s;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
 }
 
-.faq-content {
-  display: none;
-  padding: 10px;
-  background: #0f2235;
-  margin-top: 5px;
-  border-radius: 5px;
-  font-size: 14px;
+.faq-btn span:first-child {
+  flex: 1;
+  padding-right: 12px;
+  font-size: 1rem;
+  letter-spacing: -0.2px;
 }
 
+/* আইকন স্টাইল */
 .icon {
-  font-size: 18px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+  color: #2c7a64;
+  background: #eef3f0;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
+
+/* যখন অ্যাক্টিভ থাকবে আইকন ঘুরবে */
+.faq-item.active .icon {
+  transform: rotate(45deg);
+  background: #1e6f5c;
+  color: white;
+}
+
+/* কন্টেন্ট (উত্তর) */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.2s ease;
+  background-color: #fefef7;
+  border-top: 0px solid #e2edf2;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #2c3f4f;
+  padding: 0 1.5rem;
+  margin: 0;
+}
+
+.faq-item.active .faq-content {
+  max-height: 220px; /* পর্যাপ্ত জায়গা, যেকোনো কন্টেন্টের জন্য */
+  padding: 0rem 1.5rem 1.4rem 1.5rem;
+  border-top-width: 1px;
+  border-top-color: #dce9f0;
+  border-top-style: solid;
+}
+
+/* কন্টেন্টের ভিতরে কিছু স্টাইলিশ টাচ */
+.faq-content::before {
+  content: "💡";
+  font-size: 0.85rem;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+/* কাস্টম স্ক্রল বার */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #e2ecf2;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #8bb4c4;
+  border-radius: 10px;
+}
+
+/* রেসপন্সিভ */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+  .faq-container {
+    padding: 1.2rem;
+  }
+  .faq-btn {
+    padding: 1rem 1.2rem;
+  }
+  .faq-item.active .faq-content {
+    padding: 0rem 1.2rem 1.2rem 1.2rem;
+  }
+  .faq-btn span:first-child {
+    font-size: 0.9rem;
+  }
+  .icon {
+    width: 28px;
+    height: 28px;
+    font-size: 1.4rem;
+  }
+}
+
+/* ফুটার নোট */
+.note {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: #5f7f96;
+  background: #eef3f8;
+  display: inline-block;
+  width: auto;
+  padding: 8px 18px;
+  border-radius: 50px;
+  backdrop-filter: blur(4px);
+}
+.footer-note-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* ছোট ছোট হাইলাইট */
+.faq-content strong {
+  color: #1c6d5e;
+    }
 /* FOOTER */
 footer {
   text-align: center;
@@ -622,27 +803,123 @@ transition:0.3s;
 
 <body>
 
-<!-- Hero Section / Banner -->
-<div class="hero">
-  <h1>Welcome to 1xBet Bangladesh</h1>
-  <a href="#">Join Now</a>
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>FAQ - Betting Guide Bangladesh</title>
+  <!-- External CSS & JS Links -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="faq-container">
+  <div class="faq-header">
+    <h1>
+      <i class="fas fa-question-circle"></i> 
+      সাধারণ জিজ্ঞাসা
+    </h1>
+    <p>বাংলাদেশের জনপ্রিয় বেটিং সাইট সম্পর্কে সঠিক তথ্য</p>
+  </div>
+
+  <div class="faq-list">
+    <!-- 1 -->
+    <div class="faq-item">
+      <button class="faq-btn">
+        <span>📌 Is 1xBet legal in Bangladesh?</span>
+        <span class="icon">+</span>
+      </button>
+      <p class="faq-content">1xBet is widely used in Bangladesh. Always use trusted links and play responsibly.</p>
+    </div>
+    <!-- 2 -->
+    <div class="faq-item">
+      <button class="faq-btn">
+        <span>💸 How to deposit in 1xBet Bangladesh?</span>
+        <span class="icon">+</span>
+      </button>
+      <p class="faq-content">You can deposit using bKash, Nagad, Rocket and other local payment methods.</p>
+    </div>
+    <!-- 3 -->
+    <div class="faq-item">
+      <button class="faq-btn">
+        <span>🏧 How to withdraw money from 1xBet?</span>
+        <span class="icon">+</span>
+      </button>
+      <p class="faq-content">Withdraw your winnings easily through mobile banking like bKash or Nagad.</p>
+    </div>
+    <!-- 4 -->
+    <div class="faq-item">
+      <button class="faq-btn">
+        <span>💰 What is the minimum deposit in Linebet?</span>
+        <span class="icon">+</span>
+      </button>
+      <p class="faq-content">Linebet allows low minimum deposits, making it easy for beginners to start.</p>
+    </div>
+    <!-- 5 -->
+    <div class="faq-item">
+      <button class="faq-btn">
+        <span>📱 Can I use Linebet on mobile?</span>
+        <span class="icon">+</span>
+      </button>
+      <p class="faq-content">Yes, Linebet is fully mobile-friendly and also offers an app for Android users.</p>
+    </div>
+    <!-- 6 -->
+    <div class="faq-item">
+      <button class="faq-btn">
+        <span>🎁 What bonus does Melbet offer?</span>
+        <span class="icon">+</span>
+      </button>
+      <p class="faq-content">Melbet offers welcome bonuses, free bets, and casino promotions for new users.</p>
+    </div>
+    <!-- 7 -->
+    <div class="faq-item">
+      <button class="faq-btn">
+        <span>⭐ Which betting site is best in Bangladesh?</span>
+        <span class="icon">+</span>
+      </button>
+      <p class="faq-content">1xBet, Linebet, and Melbet are among the most popular betting sites in Bangladesh.</p>
+    </div>
+    <!-- 8 -->
+    <div class="faq-item">
+      <button class="faq-btn">
+        <span>🆔 Do I need verification to withdraw?</span>
+        <span class="icon">+</span>
+      </button>
+      <p class="faq-content">Yes, most platforms require account verification before withdrawal for security.</p>
+    </div>
+    <!-- 9 -->
+    <div class="faq-item">
+      <button class="faq-btn">
+        <span>🛡️ Is betting safe online?</span>
+        <span class="icon">+</span>
+      </button>
+      <p class="faq-content">Betting is safe if you use trusted platforms and manage your budget carefully.</p>
+    </div>
+    <!-- 10 -->
+    <div class="faq-item">
+      <button class="faq-btn">
+        <span>✨ How to get free bonus?</span>
+        <span class="icon">+</span>
+      </button>
+      <p class="faq-content">Use promo codes like Oxy11 during registration to unlock welcome bonuses.</p>
+    </div>
+  </div>
+  
+  <div class="footer-note-wrap">
+    <div class="note">
+      <i class="fas fa-shield-alt"></i> দায়িত্বশীল বেটিং করুন | ১৮+ শুধুমাত্র
+    </div>
+  </div>
 </div>
 
-<!-- SEO Content Section -->
-<section class="seo-content">
-  <h1>Official 1xBet Bangladesh</h1>
-
-  <h2>1xBet Promo Code Bangladesh</h2>
-  <p>Use promo code Oxy11 to get bonus on your first deposit...</p>
-
-  <h2>How to Register 1xBet</h2>
-  <p>Create an account easily using your mobile number or email...</p>
-
-  <h2>1xBet Deposit & Withdraw</h2>
-  <p>Deposit via bKash, Nagad and withdraw instantly...</p>
-</section>
-
+<script src="script.js"></script>
 </body>
+</html>
     <!-- Payment Method Section -->
 <div class="payment-methods">
     <h3>Payment Method</h3>
@@ -704,24 +981,38 @@ transition:0.3s;
 </div>
 </div>
 <script>
+    // অ্যাকর্ডিয়ন ফাংশনালিটি: প্রতিটি প্রশ্নে ক্লিক করলে খুলবে/বন্ধ হবে
+// একসাথে মাত্র একটি আইটেম ওপেন থাকবে (সুন্দর ও পরিষ্কার UX এর জন্য)
 
-  const buttons = document.querySelectorAll(".faq-btn");
+document.addEventListener('DOMContentLoaded', function() {
+  const faqItems = document.querySelectorAll('.faq-item');
 
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      const content = btn.nextElementSibling;
-      const icon = btn.querySelector(".icon");
+  function closeAllItems() {
+    faqItems.forEach(item => {
+      item.classList.remove('active');
+    });
+  }
 
-      if (content.style.display === "block") {
-        content.style.display = "none";
-        icon.textContent = "+";
-      } else {
-        content.style.display = "block";
-        icon.textContent = "-";
+  faqItems.forEach(item => {
+    const button = item.querySelector('.faq-btn');
+    button.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      
+      // সব বন্ধ করে দিন
+      closeAllItems();
+      
+      // যদি আগে সক্রিয় না ছিল, তাহলে এটি খুলুন
+      if (!isActive) {
+        item.classList.add('active');
       }
     });
   });
 
+  // প্রথম আইটেম ডিফল্ট হিসেবে খোলা রাখা (ইউজার এক্সপেরিয়েন্স ভালো হয়)
+  if (faqItems.length > 0) {
+    faqItems[0].classList.add('active');
+  }
+});
 </script>
 
 <!-- SPIN MODAL -->
