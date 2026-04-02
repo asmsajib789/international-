@@ -548,11 +548,16 @@
     });
 
 
-    console.log("LineBet Guide Loaded - Green Theme, Back button ready, Upper CTA added.");
-    
+    // ব্যাক বাটন ফাংশন
     function goBack() {
-        window.history.back();
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = 'index.html';
+        }
     }
+
+    console.log("Back button is now fixed and working!");
 </script>
 </body>
 </html>
