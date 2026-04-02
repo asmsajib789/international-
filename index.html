@@ -271,20 +271,33 @@ header {
   color: #fff;
 }
 
-.seo-content h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.faq-btn {
+  width: 100%;
+  background: #112b44;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 6px;
 }
 
-.seo-content h2 {
-  font-size: 18px;
-  margin-top: 15px;
-  color: #00c3ff;
-}
-
-.seo-content p {
+.faq-content {
+  display: none;
+  padding: 10px;
+  background: #0f2235;
+  margin-top: 5px;
+  border-radius: 5px;
   font-size: 14px;
-  line-height: 1.6;
+}
+
+.icon {
+  font-size: 18px;
 }
 /* FOOTER */
 footer {
@@ -690,6 +703,26 @@ transition:0.3s;
 
 </div>
 </div>
+<script>
+
+  const buttons = document.querySelectorAll(".faq-btn");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector(".icon");
+
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        icon.textContent = "+";
+      } else {
+        content.style.display = "block";
+        icon.textContent = "-";
+      }
+    });
+  });
+
+</script>
 
 <!-- SPIN MODAL -->
 <div id="spinModal">
