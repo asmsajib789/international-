@@ -14,7 +14,7 @@
     <loc>https://1xbetbdbangladesh.store/faq.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
 
   <!-- Casino Page -->
@@ -22,7 +22,7 @@
     <loc>https://1xbetbdbangladesh.store/casino.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
 
   <!-- Sports Page -->
@@ -30,7 +30,7 @@
     <loc>https://1xbetbdbangladesh.store/sports.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
 
   <!-- 1xBet Landing Page -->
@@ -38,7 +38,7 @@
     <loc>https://1xbetbdbangladesh.store/1xbet.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>1.0</priority>
   </url>
 
   <!-- Linebet Landing Page -->
@@ -46,7 +46,7 @@
     <loc>https://1xbetbdbangladesh.store/linebet.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>1.0</priority>
   </url>
 
   <!-- Melbet Landing Page -->
@@ -54,7 +54,7 @@
     <loc>https://1xbetbdbangladesh.store/melbet.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>1.0</priority>
   </url>
 
   <!-- Blog Pages -->
@@ -62,21 +62,21 @@
     <loc>https://1xbetbdbangladesh.store/blog1-1xbet.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://1xbetbdbangladesh.store/blog2-linebet.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://1xbetbdbangladesh.store/blog3-melbet.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>1.0</priority>
   </url>
 
 </urlset>
